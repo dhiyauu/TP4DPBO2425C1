@@ -1,6 +1,6 @@
 # TP4DPBO2425C1
 ## Janji
-Saya Dhiya Ulhaq dengan NIM 2407716 mengerjakan Tugas Praktikum 4 (Java Swing GUI) dalam mata kuliah desain & pemrograman berorientasi objek untuk keberkahan-Nya maka saya tidak akan melakukan kecurangan seperti yang telah di spesifikasikan. Aamiin.
+Saya Dhiya Ulhaq dengan NIM 2407716 Mengerjakan Tugas Praktikum 4 (Java Swing GUI) dalam Mata Kuliah Desain Pemrograman Berorientasi Objek untuk Keberkahan-Nya Maka Saya Tidak Akan Melakukan Kecurangan Seperti Yang Telah di Spesifikasikan. Aamiin.
 
 ## Penjelasan Desain Program
 
@@ -9,11 +9,11 @@ Program ini adalah aplikasi CRUD sederhana berbasis Java Swing untuk mengelola d
 ### Atribut
 
 Di dalamnya terdapat beberapa atribut, diantaranya:
-1. ID : Identitas unik tiap produk agar membedakan produk jika nama produk sama.
-2. Nama : Identitas deskriptif saat menampilkan daftar produk.
-3. Harga : Harga dipakai saat menampilkan produk, transaksi, atau perhitungan.
-4. Kategori : Untuk mengelompokkan produk ke dalam “jenis” yang sejenis pada produk.
-5. Organik : Untuk menandai apakah produk itu organik (true) atau non-organik (false).
+1. **ID** : Identitas unik tiap produk agar membedakan produk jika nama produk sama.
+2. **Nama** : Identitas deskriptif saat menampilkan daftar produk.
+3. **Harga** : Harga dipakai saat menampilkan produk, transaksi, atau perhitungan.
+4. **Kategori** : Untuk mengelompokkan produk ke dalam “jenis” yang sejenis pada produk.
+5. **Organik** : Untuk menandai apakah produk itu organik (true) atau non-organik (false).
 
 ### Getter & Setter
 
@@ -44,8 +44,10 @@ Terdapat getter dan setter untuk akses/mengubah data produk, diantaranya:
 Menyimpan semua produk dalam bentuk objek `Product`.
 
 ### Desain UI
+<p align="center">
+        <img src="https://github.com/user-attachments/assets/28122769-6622-44bb-b716-221533c7f7a7" alt="Desain UI" width="500">
+</p>
 
-<img src="E:\Dhiya Ulhaq\Tugas\UPI\Desain Pemrograman Berorientasi Objek\Praktikum\TP4\Desain UI.png" width="600"/>
 
 Terdapat komponen di `ProductMenu` yang berisikan: 
 
@@ -60,13 +62,14 @@ Tabel tidak mengedit langsung, ia menampilkan salinan data dari *listProduct* le
 
 ## Alur Program
 
-### a. Main Membuat Instance `new ProductMenu().`
+### a. Main Membuat Instance `new ProductMenu()`
 ```java
 public static void main(String[] args) {
         // buat object window
         ProductMenu menu = new ProductMenu();
         ...
 ```
+Menjalankan konstruktor `ProductMenu()` untuk inisialisasi komponen, isi `listProduct`, panggil `populateList()`, set model tabel `setTable()`, pasang listener tombol/tabel, set radio, dan lain-lain.
 ### b. Panggil `populateList()`
 ```java
 private void populateList() {
@@ -75,7 +78,7 @@ private void populateList() {
         listProduct.add(new Product("M003", "Apel Fuji 1kg", 35000.0, "Buah", true));
         ...
 ```
-Konstruktor `ProductMenu` memanggil `populateList()` untuk mengisi 15 produk yang terdiri dari id, nama, harga, kategori, dan jenis organik/anorganik.
+Konstruktor `ProductMenu` memanggil `populateList()` untuk mengisi 15 produk yang terdiri dari id, nama, harga, kategori, dan jenis organik/non-organik.
 
 ### c. Atur Opsi ComboBox dan ButtonGroup
 ```java
@@ -148,4 +151,8 @@ public void clearForm() {
 ```
 Tombol ini saat ditekan akan selalu kembali ke mode Add dan siap input baru karena menggunakan controller `clearForm()`.
 ## Dokumentasi
-<img src="E:\Dhiya Ulhaq\Tugas\UPI\Desain Pemrograman Berorientasi Objek\Praktikum\TP4\Dokumentasi TP4.mp4" width="600"/>
+<video src="https://github.com/user-attachments/assets/69739acd-993b-46d0-b520-8875eeb6098a"
+       width="240" controls>
+</video>
+
+
